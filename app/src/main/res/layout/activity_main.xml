@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/pen"
         android:layout_width="155dp"
         android:layout_height="172dp"
         android:src="@drawable/peng"
@@ -81,7 +81,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ToggleButton"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintBottom_toTopOf="@+id/pen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +94,9 @@
         android:layout_width="307dp"
         android:layout_height="294dp"
         android:src="@drawable/newimg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 

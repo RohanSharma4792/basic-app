@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
     Button button;
     ToggleButton toggle;
     ImageView image2;
+    ImageView pen;
 
 
     @Override
@@ -30,6 +31,7 @@ public class MainActivity extends Activity {
         textView = findViewById(R.id.textView);
         toggle = findViewById(R.id.toggle);
         image2 = findViewById(R.id.image2);
+        pen = findViewById(R.id.pen);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +49,12 @@ public class MainActivity extends Activity {
         toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            image2.setVisibility(View.INVISIBLE);
+            if (toggle.getText().toString().equals("OFF")){
+                image2.setVisibility(View.INVISIBLE);
+            }
+            else {
+                image2.setVisibility(View.VISIBLE);
+            }
             }
         });
     }
